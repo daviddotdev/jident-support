@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Jident",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#comment"
+		}
+	],
+	"repository": {
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.jident",
+					"match": "\\#.*"
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.name",
+					"match": "\\%\\w+([a-z]):"
+				},
+				{
+					"name": "variable.other",
+					"match": ":"
+				},
+				{
+					"name": "support.property-value",
+					"begin": ":",
+					"end": "\n"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.jident",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.jident",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.jident"
+}

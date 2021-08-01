@@ -1,0 +1,43 @@
+{
+    "name": "jident-support",
+    "displayName": "Jident Syntax Highlighting",
+    "description": "Soporte para resaltado de colores en Jident",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "icon": "icono.png",
+    "publisher": "daviddev",
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "jident",
+                "aliases": [
+                    "Jident",
+                    "jident"
+                ],
+                "extensions": [
+                    ".jden"
+                ],
+                "mimetypes": [
+                    "text/plain"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "jident",
+                "scopeName": "source.jident",
+                "path": "./syntaxes/jident.tmLanguage.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/daviddotdev/jident-support"
+    }
+}
