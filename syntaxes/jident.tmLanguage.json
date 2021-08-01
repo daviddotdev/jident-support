@@ -31,10 +31,6 @@
 					"match": "\\%\\w+([a-z]):"
 				},
 				{
-					"name": "variable.other",
-					"match": ":"
-				},
-				{
 					"name": "support.property-value",
 					"begin": ":",
 					"end": "\n"

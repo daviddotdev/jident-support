@@ -1,0 +1,12 @@
+{
+    "Objeto Simple": {
+        "prefix": "obj",
+        "body": [
+            "#${0:comentario}",
+            "%${1:label}:",
+            "\t\t${2:elemento1}:${3:valor}",
+            "\t\t${4:elemento1}:${5:valor}"
+        ],
+        "description": "Objeto Simple"
+    }
+}

@@ -34,6 +34,12 @@
                 "scopeName": "source.jident",
                 "path": "./syntaxes/jident.tmLanguage.json"
             }
+        ],
+        "snippets": [
+            {
+                "language": "jident",
+                "path": "./snippets/snippets.json"
+            }
         ]
     },
     "repository": {
