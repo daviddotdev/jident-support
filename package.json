@@ -2,7 +2,7 @@
     "name": "jident-support",
     "displayName": "Jident Syntax Highlighting",
     "description": "Soporte para resaltado de colores en Jident",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.46.0"
     },

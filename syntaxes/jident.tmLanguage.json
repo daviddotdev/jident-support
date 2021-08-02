@@ -27,8 +27,8 @@
 		"variables": {
 			"patterns": [
 				{
-					"name": "variable.name",
-					"match": "\\%\\w+([a-z]):"
+					"name": "entity.name.function",
+					"match": "\\%\\w+.*:"
 				},
 				{
 					"name": "support.property-value",
