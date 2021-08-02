@@ -6,9 +6,6 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
-		},
-		{
 			"include": "#variables"
 		},
 		{
@@ -27,24 +24,23 @@
 		"variables": {
 			"patterns": [
 				{
-					"name": "entity.name.function",
+					"name": "string",
+					"match": "^\\s+\\-[^\n]+\\S"
+				},
+				{
+					"name": "keyword",
 					"match": "\\%\\w+.*:"
 				},
 				{
-					"name": "support.property-value",
+					"name": "string",
 					"begin": ":",
-					"end": "\n"
-				}
-			]
-		},
-		"strings": {
-			"name": "string.quoted.double.jident",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
+					"end": "\\n"
+				},
 				{
-					"name": "constant.character.escape.jident",
-					"match": "\\\\."
+					"name": "entity.name.method",
+					"begin": "\\%[^\n]+:",
+					"match": "\\b(array)\\b",
+					"end": "\\n"
 				}
 			]
 		}
